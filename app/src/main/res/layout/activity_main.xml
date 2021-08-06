@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="406dp"
+        android:layout_height="156dp"
+
+        android:background="@drawable/bg_header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="312dp"
+        android:layout_height="389dp"
+
+        android:background="@drawable/bg_header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="95dp"
+        android:layout_height="94dp"
+        android:src="@drawable/uoklogo"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif"
+
+        android:text="UNIVERSITY OF"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+
+        android:fontFamily="sans-serif"
+        android:text="KELANIYA"
+        android:textColor="#660000"
+
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+
+        android:fontFamily="sans-serif"
+        android:text="Computer Assited Learning"
+        android:textColor="@color/black"
+
+
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+    android:id="@+id/username"
+    android:background="@drawable/bg_input"
+    android:layout_width="209dp"
+    android:inputType="text"
+
+
+    android:layout_height="38dp"
+    android:layout_marginStart="36dp"
+
+
+    android:layout_marginTop="36dp"
+    android:layout_marginEnd="36dp"
+    android:hint="Username"
+
+    android:paddingLeft="16dp"
+    android:textColor="#232323"
+
+
+    app:layout_constraintEnd_toEndOf="@+id/view2"
+    app:layout_constraintHorizontal_bias="0.445"
+    app:layout_constraintStart_toStartOf="@+id/view2"
+    app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="209dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="36dp"
+
+
+        android:layout_marginTop="28dp"
+
+
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/bg_input"
+        android:hint="Password"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:textColor="@color/black"
+
+
+
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="206dp"
+
+
+        android:layout_height="35dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="32dp"
+        android:text="Remember User Name"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="110dp"
+        android:layout_height="49dp"
+        android:text="Log in"
+        android:textColor="#000"
+        android:background="#fff"
+        android:fontFamily="sans-serif"
+
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
